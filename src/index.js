@@ -5,16 +5,11 @@ import ReactDOM from "react-dom";
 
 
 class App extends React.Component {
-    // Constructor function is always called on app load,
-    // use this to set initial state
-    constructor(props) {
-        super(props);
+    // initialized State
+    state = { lat : null, errorMessage: ''};
 
-        // This is the ONLY time we do direct assignment to this.state
-        this.state = { lat: null, errorMessage: '' };
-
+    componentDidMount() {
         window.navigator.geolocation.getCurrentPosition(
-            // we called setState !! :)
             (position) => this.setState({lat: position.coords.latitude}),
             (err) => this.setState({ errorMessage: err.message })
         );
