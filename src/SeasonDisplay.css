@@ -11,11 +11,11 @@
 }
 
 .season-display.winter i {
-    color: blue;
+    color: #7d87b8;
 }
 
 .season-display.summer i {
-    color: yellow;
+    color: #fada82;
 }
 
 .season-display {
@@ -26,9 +26,22 @@
 }
 
 .winter {
-    background-color: aliceblue;
+    background-image: url("https://ak2.picdn.net/shutterstock/videos/23048782/thumb/1.jpg?i10c=img.resize(height:160)");
+    background-size: cover;
+    background-position: bottom;
 }
 
 .summer {
-    background-color: orange;
+
+    background-image: url("https://ak2.picdn.net/shutterstock/videos/6208502/thumb/1.jpg");
+    background-size: cover;
+    background-position: bottom;
+
+}
+
+h1 {
+    color: antiquewhite ;
+    background-color: #404047;
+    border-radius: 8px;
+    padding: 5px;
 }
